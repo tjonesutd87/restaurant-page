@@ -21,7 +21,8 @@ function createSocialItem (parentId, socialItemId, image, imageId, text) {
 
 export function initialPageLoad() {
     //  variable declarations
-    const content = document.getElementById('content');
+    const container = document.createElement('div');
+    const content = document.createElement('div');
     const titleDiv = document.createElement('div');
     const titleText = document.createElement('h1');
     const splashVerbiage = 'At Don Gabagool\'s, our motto is "aayyyy fugettaboutit". We treat our customers like family, because we share the bond of good food, and in life that is most important. With a deep, rich, northern Italian history, we know how to make food, and that history comes through in the flavor. Quality and customer service are our utmost priorities, so you will always leave full and happy. Come enjoy our authentic homestyle italian food, from pasta to pizza and everything in between. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
@@ -65,12 +66,20 @@ export function initialPageLoad() {
 
         },
     ];
-    
-    //  append title to content container and set title text
-    content.appendChild(titleDiv);
+
+    container.id = 'container';
+    document.body.appendChild(container);
+
+    //  append title to container and set title text
+    container.appendChild(titleDiv);
     titleDiv.id = 'title';
     titleDiv.appendChild(titleText);
     titleText.textContent = 'Don Gabagool\'s Italian Ristorante';
+    
+    //  append content to container
+    content.id = 'home-content';
+    container.appendChild(content);
+
 
     //  append splash info div
     content.appendChild(splashDiv);
