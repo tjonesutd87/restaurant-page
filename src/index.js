@@ -1,7 +1,7 @@
 import './styles.css';
 import { initialPageLoad } from './initial-load.js';
 import { aboutPageLoad } from './about.js';
-import { menuPageLoad } from './menuPage.js';
+import { menuPageLoad } from './menu-page.js';
 import { contactPageLoad } from './contact.js';
 
 
