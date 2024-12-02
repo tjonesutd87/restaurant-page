@@ -292,7 +292,7 @@ footer {
     padding: 20px;
 }
 
-#signup-form {
+#contact-form, #completion-div {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -304,6 +304,7 @@ footer {
     align-items: center;
     background-color: #fc8c5c;
     width: 80%;
+    height: 90%;
 }
 
 #contact-div p {
@@ -364,7 +365,7 @@ textarea {
     margin: 0;
 }
 
-#signup-form ul {
+#contact-form ul {
     display: flex;
     flex-direction: column;
     gap:15px;
@@ -374,11 +375,11 @@ textarea {
     width: 100%;
 }
 
-#signup-form li {
+#contact-form li {
     margin: 0;
 }
 
-#signup-form button {
+#contact-form button {
     margin: auto;
     background-color: #da5117;
     border: none;
@@ -390,12 +391,12 @@ textarea {
     box-shadow: 1px 1px 1px #b63700;
 }
 
-#signup-form button:hover {
+#contact-form button:hover {
     background-color: #da5117;
     color: #ff8a58;
 }
 
-#signup-form button:active {
+#contact-form button:active {
     background-color: #b63700;
     box-shadow: inset 3px 3px 3px #441400;
 }
